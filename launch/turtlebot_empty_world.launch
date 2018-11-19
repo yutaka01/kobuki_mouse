@@ -18,7 +18,7 @@
       <arg name="stacks" value="$(arg stacks)"/>
       <arg name="3d_sensor" value="$(arg 3d_sensor)"/>
       <arg name="robot_name" value="r1"/>
-      <arg name="init_pose" value="-x 1 -y 1 -z 0"/>
+      <arg name="init_pose" value="-x 0 -y 0 -z 0"/>
     </include>
     <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
       <param name="publish_frequency" type="double" value="30.0" />
@@ -31,7 +31,7 @@
       <arg name="stacks" value="$(arg stacks)"/>
       <arg name="3d_sensor" value="$(arg 3d_sensor)"/>
       <arg name="robot_name" value="r2"/>
-      <arg name="init_pose" value="-x 1 -y 4 -z 0"/>
+      <arg name="init_pose" value="-x 1 -y 1 -z 0"/>
     </include>
     <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
       <param name="publish_frequency" type="double" value="30.0" />
