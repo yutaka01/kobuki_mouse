@@ -11,9 +11,11 @@ class Block:
 class Tutorial:
 
     _blockListDict = {
-        'r1': Block('r1', 'r1'),
-        'r2': Block('r2', 'r2'),
-
+        'r1': Block('r1', ''),
+        'r2': Block('r2', ''),
+        'r3': Block('r3', ''),
+        'r4': Block('r4', ''),
+        'r5': Block('r5', ''),
     }
 
     def show_gazebo_models(self):
@@ -26,8 +28,8 @@ class Tutorial:
                 print 'Status.success = ', resp_coordinates.success
                 print(blockName)
                 print("Cube " + str(block._name))
-                print("Valeur de X : " + str(resp_coordinates.pose.position.x))
-                print("Quaternion X : " + str(resp_coordinates.pose.orientation.y))
+                print("x = " + str(resp_coordinates.pose.position.x))
+                print("y = " + str(resp_coordinates.pose.position.y))
 
         except rospy.ServiceException as e:
             rospy.loginfo("Get Model State service call failed:  {0}".format(e))
