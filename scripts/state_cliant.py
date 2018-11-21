@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 from gazebo_msgs.srv import GetModelState
-import rospy
+import rospy 
 
 class Block:
     def __init__(self, name, relative_entity_name):
@@ -30,7 +30,11 @@ class Tutorial:
                 print("Cube " + str(block._name))
                 print("x = " + str(resp_coordinates.pose.position.x))
                 print("y = " + str(resp_coordinates.pose.position.y))
-
+                pts = [[resp_coordinates.pose.position.x, resp_coordinates.pose.position.y]
+            for v in range(5):
+                a = v
+                print('X%d=' %(v+1))
+                print(pts[v])#v' = 'pts[v])
         except rospy.ServiceException as e:
             rospy.loginfo("Get Model State service call failed:  {0}".format(e))
 

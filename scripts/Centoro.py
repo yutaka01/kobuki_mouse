@@ -4,18 +4,19 @@ import matplotlib.pyplot as plt
 from scipy.spatial import Voronoi, voronoi_plot_2d
 from shapely.geometry import Polygon, Point
  
- 
-def centroidal(vor, pts):
-    sq = Polygon([[0, 0], [10, 0], [10, 10], [0, 10]])
-    maxd = 0.0
-    for i in range(len(pts) - 3):
-        poly = [vor.vertices[v] for v in vor.regions[vor.point_region[i]]]
-        i_cell = sq.intersection(Polygon(poly))
-        p = Point(pts[i])
-        pts[i] = i_cell.centroid.coords[0]
-        d = p.distance(Point(pts[i]))
+class Centoro:
+
+    def centroidal(vor, pts):
+        sq = Polygon([[0, 0], [10, 0], [10, 10], [0, 10]])
+        maxd = 0.0
+        for i in range(len(pts) - 3):
+            poly = [vor.vertices[v] for v in vor.regions[vor.point_region[i]]]
+            i_cell = sq.intersection(Polygon(poly))
+            p = Point(pts[i])
+            pts[i] = i_cell.centroid.coords[0]
+            d = p.distance(Point(pts[i]))
         if maxd < d: maxd = d
-    return maxd
+        return maxd
  
 if __name__ == '__main__':
     n = 20
