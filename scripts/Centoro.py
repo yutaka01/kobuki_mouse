@@ -27,7 +27,7 @@ if __name__ == '__main__':
         print(pts[v])#v' = 'pts[v])
     pts = pts + [[100, 100], [100, -100], [-100, 0]]
     pts = pts.replace('"', '')
-    #plt.figure(figsize=(6, 6))
+    plt.figure(figsize=(6, 6))
     d_threshold = 0.005
     num = 0
     while True:
@@ -36,16 +36,16 @@ if __name__ == '__main__':
         vor = Voronoi(pts)
         d = Centoro.centroidal(vor, pts)
  
-        #plt.cla()
-        #fig = voronoi_plot_2d(vor, ax=plt.gca(),show_vertices=False) #ax=plt.gca()
+        plt.cla()
+        fig = voronoi_plot_2d(vor, ax=plt.gca(),show_vertices=False) #ax=plt.gca()
 
-        #plt.gca().set_aspect('equal')
-        #plt.gca().set_xlim([0, 10])
-        #plt.gca().set_ylim([0, 10])
+        plt.gca().set_aspect('equal')
+        plt.gca().set_xlim([0, 10])
+        plt.gca().set_ylim([0, 10])
         if num == 1:
-            #plt.savefig(str(num) + '.png', bbox_inches='tight')
+            plt.savefig(str(num) + '.png', bbox_inches='tight')
         if d < d_threshold:
-            #plt.savefig(str(num) + '.png', bbox_inches='tight')
+            plt.savefig(str(num) + '.png', bbox_inches='tight')
             break
     for v in range(n):
         print('X%d=' %(v+1))
