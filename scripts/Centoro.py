@@ -5,8 +5,8 @@ from scipy.spatial import Voronoi, voronoi_plot_2d
 from shapely.geometry import Polygon, Point
  
 class Centoro:
-
-    def centroidal(vor, pts):
+    @classmethod
+    def centroidal(self,vor, pts):
         sq = Polygon([[0, 0], [10, 0], [10, 10], [0, 10]])
         maxd = 0.0
         for i in range(len(pts) - 3):
@@ -26,26 +26,26 @@ if __name__ == '__main__':
         print('X%d=' %(v+1))
         print(pts[v])#v' = 'pts[v])
     pts = pts + [[100, 100], [100, -100], [-100, 0]]
-	
-    plt.figure(figsize=(6, 6))
+    pts = pts.replace('"', '')
+    #plt.figure(figsize=(6, 6))
     d_threshold = 0.005
     num = 0
     while True:
         
         num += 1
         vor = Voronoi(pts)
-        d = centroidal(vor, pts)
+        d = Centoro.centroidal(vor, pts)
  
-        plt.cla()
-        fig = voronoi_plot_2d(vor, az=plt.gca(), show_vertices=False) #ax=plt.gca()
+        #plt.cla()
+        #fig = voronoi_plot_2d(vor, ax=plt.gca(),show_vertices=False) #ax=plt.gca()
 
-        plt.gca().set_aspect('equal')
-        plt.gca().set_xlim([0, 10])
-        plt.gca().set_ylim([0, 10])
+        #plt.gca().set_aspect('equal')
+        #plt.gca().set_xlim([0, 10])
+        #plt.gca().set_ylim([0, 10])
         if num == 1:
-            plt.savefig(str(num) + '.png', bbox_inches='tight')
+            #plt.savefig(str(num) + '.png', bbox_inches='tight')
         if d < d_threshold:
-            plt.savefig(str(num) + '.png', bbox_inches='tight')
+            #plt.savefig(str(num) + '.png', bbox_inches='tight')
             break
     for v in range(n):
         print('X%d=' %(v+1))

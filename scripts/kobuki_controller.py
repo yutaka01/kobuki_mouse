@@ -5,7 +5,7 @@ from geometry_msgs.msg import Twist
 if __name__=="__main__":
         rospy.init_node('it')
 
-        p=rospy.Publisher('r2/commands/velocity',Twist)
+        p=rospy.Publisher('r2/mobile_base/commands/velocity',Twist)
         twist = Twist()
         twist.linear.x = -0.5;
         twist.linear.y = 0.0;
