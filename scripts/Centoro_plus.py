@@ -48,6 +48,7 @@ class Tutorial:
         try:
             model_coordinates = rospy.ServiceProxy('/gazebo/get_model_state', GetModelState)
             pts = []
+            name = []
             for block in self._blockListDict.itervalues():
                 
                 blockName = str(block._name)
@@ -59,10 +60,12 @@ class Tutorial:
                 print("x = " + str(resp_coordinates.pose.position.x))
                 print("y = " + str(resp_coordinates.pose.position.y))
                 pts.append([resp_coordinates.pose.position.x, resp_coordinates.pose.position.y])
+                name.append(blockName)
             print(pts)
+            print(name)
             pts = pts + [[100, 100], [100, -100], [-100, 0]]
             plt.figure(figsize=(6, 6))
-            d_threshold = 0.005
+            d_threshold = 0.001
             num = 0
             while True:
         
@@ -77,15 +80,17 @@ class Tutorial:
                 plt.gca().set_xlim([0, 10])
                 plt.gca().set_ylim([0, 10])
                 if num == 1:
+                    plt.show()
                     plt.savefig(str(num) + '.png', bbox_inches='tight')
                 if d < d_threshold:
                     plt.savefig(str(num) + '.png', bbox_inches='tight')
                     break
             for v in range(5):
-                print('X%d=' %(v+1))
+                print(name[v])
                 print(pts[v])#v' = 'pts[v])
             print(num)
             print(pts)
+            plt.show()
         except rospy.ServiceException as e:
             rospy.loginfo("Get Model State service call failed:  {0}".format(e))
             

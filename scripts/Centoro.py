@@ -51,6 +51,6 @@ if __name__ == '__main__':
         print('X%d=' %(v+1))
         print(pts[v])#v' = 'pts[v])
     print(num)
-    
+    plt()
 
 
