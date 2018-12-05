@@ -5,7 +5,7 @@ from gazebo_msgs.srv import GetModelState
 import matplotlib.pyplot as plt
 from scipy.spatial import Voronoi, voronoi_plot_2d
 from shapely.geometry import Polygon, Point
-#from sympy import *
+from sympy import integrate,Symbol
  
 class Centoro:
     @classmethod
@@ -20,7 +20,12 @@ class Centoro:
             d = p.distance(Point(pts[i]))
         if maxd < d: maxd = d
         return maxd
-
+    @classmethod
+    def coverage(self,a,b):
+        x = Symbol('x')
+        y = Symbol('y')
+        ans = integrate(((x - a)**2 + (y - b)**2),(y, 0, 10),(x, 0, 10))
+        return ans
 class Block:
     def __init__(self, name, relative_entity_name):
         self._name = name
@@ -83,7 +88,12 @@ class Tutorial:
                 plt.gca().set_xlim([0, 10])
                 plt.gca().set_ylim([0, 10])
                 plt.savefig(str(num) + '.png', bbox_inches='tight')
-
+                for r in range(5):
+                    hyo = 10000000000000000000000
+                    hyo1 = Centoro.coverage(*pts[r])
+                    if hyo1 < hyo:
+                        hyo = hyo1
+                print(hyo)
                 if d < d_threshold:
                     plt.savefig(str(num) + '.png', bbox_inches='tight')
                     break
