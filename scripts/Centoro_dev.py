@@ -21,12 +21,11 @@ class Centoro:
         if maxd < d: maxd = d
         return maxd
     @classmethod
-    def coverage(self,pts):
-        a = pts[0]
-        b = pts[1]
+    def coverage(self,a,b):
+        print(a,b)
         x = Symbol('x')
         y = Symbol('y')
-        ans = integrate(((x - a)**2 + (y - b)**2),(y, 0, 10),(x, 0, 10))
+        ans = integrate(((x - a)**2 + (y - b)**2),(x, 0, 10),(y, 0, 10))
         return ans
 class Block:
     def __init__(self, name, relative_entity_name):
@@ -92,9 +91,10 @@ class Tutorial:
                 plt.savefig(str(num) + '.png', bbox_inches='tight')
                 for r in range(5):
                     hyo = 10000000000000000000000
-                    hyo1 = Centoro.coverage(pts[r])
+                    hyo1 = Centoro.coverage(*pts[r])
                     if hyo1 < hyo:
                         hyo = hyo1
+                    #print(hyo)
                 print(hyo)
                 if d < d_threshold:
                     plt.savefig(str(num) + '.png', bbox_inches='tight')
