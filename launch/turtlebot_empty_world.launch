@@ -4,7 +4,7 @@
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="use_sim_time" value="true"/>
     <arg name="debug" value="false"/>
-    <arg name="world_name" value="$(find kobuki_mouse)/worlds/wall.world"/>
+    <arg name="world_name" value="$(find kobuki_mouse)/worlds/empty.world"/>
   </include>
   
  <arg name="base"      value="$(optenv TURTLEBOT_BASE kobuki)"/> <!-- create, roomba -->

@@ -70,6 +70,7 @@ class Tutorial:
             plt.figure(figsize=(6, 6))
             d_threshold = 0.001
             num = 0
+            mydict= dict()
             while True:
         
                 num += 1
@@ -82,7 +83,7 @@ class Tutorial:
                 plt.gca().set_aspect('equal')
                 plt.gca().set_xlim([0, 10])
                 plt.gca().set_ylim([0, 10])
-                plt.savefig(str(num) + '.png', bbox_inches='tight')
+                #plt.savefig(str(num) + '.png', bbox_inches='tight')
 
                 if d < d_threshold:
                     plt.savefig(str(num) + '.png', bbox_inches='tight')
@@ -90,6 +91,9 @@ class Tutorial:
             for v in range(5):
                 print(name[v])
                 print(pts[v])#v' = 'pts[v])
+                mydict[name[v]] = pts[v]
+                print(mydict)
+            print(mydict["r1"][0])
             print(num)
             print(pts)
             plt.show()
