@@ -5,7 +5,7 @@ from gazebo_msgs.srv import GetModelState
 import matplotlib.pyplot as plt
 from scipy.spatial import Voronoi, voronoi_plot_2d
 from shapely.geometry import Polygon, Point
-from sympy import integrate,Symbol
+from sympy import integrate,Symbol,Matrix
  
 class Centoro:
     @classmethod
@@ -22,11 +22,11 @@ class Centoro:
         return maxd
     @classmethod
     def coverage(self,a,b):
-        print(a,b)
         x = Symbol('x')
         y = Symbol('y')
         ans = integrate(((x - a)**2 + (y - b)**2),(x, 0, 10),(y, 0, 10))
         return ans
+
 class Block:
     def __init__(self, name, relative_entity_name):
         self._name = name
@@ -74,28 +74,29 @@ class Tutorial:
             print(name)
             pts = pts + [[100, 100], [100, -100], [-100, 0]]
             plt.figure(figsize=(6, 6))
-            d_threshold = 0.001
+            d_threshold = 0.0001
             num = 0
+            hyolist = []
             while True:
-        
                 num += 1
                 vor = Voronoi(pts)
                 d = Centoro.centroidal(vor, pts)
  
-                plt.cla()
-                fig = voronoi_plot_2d(vor, ax=plt.gca(), show_vertices=False) #ax=plt.gca()
+#                plt.cla()
+#                fig = voronoi_plot_2d(vor, ax=plt.gca(), show_vertices=False) #ax=plt.gca()
 
-                plt.gca().set_aspect('equal')
-                plt.gca().set_xlim([0, 10])
-                plt.gca().set_ylim([0, 10])
-                plt.savefig(str(num) + '.png', bbox_inches='tight')
+#                plt.gca().set_aspect('equal')
+#                plt.gca().set_xlim([0, 10])
+#                plt.gca().set_ylim([0, 10])
+#                plt.savefig(str(num) + '.png', bbox_inches='tight')
+                hyo = []
                 for r in range(5):
-                    hyo = 10000000000000000000000
-                    hyo1 = Centoro.coverage(*pts[r])
-                    if hyo1 < hyo:
-                        hyo = hyo1
-                    #print(hyo)
-                print(hyo)
+                    print(pts[r])
+                    hyo.append(Centoro.coverage(*pts[r]))
+                    print(hyo)
+                print("Ans")
+                print(sum(hyo))
+                hyolist.append(sum(hyo))
                 if d < d_threshold:
                     plt.savefig(str(num) + '.png', bbox_inches='tight')
                     break
@@ -104,7 +105,11 @@ class Tutorial:
                 print(pts[v])#v' = 'pts[v])
             print(num)
             print(pts)
-            plt.show()
+            x = numpy.array([i for i in range(num)])
+            y = hyolist
+            global z
+            z = plt.plot(x,y)
+            plt.show(z)
         except rospy.ServiceException as e:
             rospy.loginfo("Get Model State service call failed:  {0}".format(e))
             

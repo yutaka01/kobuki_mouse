@@ -487,7 +487,6 @@ class turtlebot():
             print(theta)
             self.pose = Point()
             self.rate = rospy.Rate(1000)
-                
             radian = atan2(goal_pose.y - self.resp_coordinates.pose.position.y, goal_pose.x -self.resp_coordinates.pose.position.x) #二点間の角度
 
             if theta - radian < 0:
@@ -508,7 +507,7 @@ class turtlebot():
             #Stopping our robot after the movement is over
         vel_msg.linear.x = 0
         vel_msg.angular.z =0
-        self.velocity_publisher.publish(vel_msg) #停止
+        self.velocity_publisher.publish(vel_msg) #停止multiprocessing
         rospy.sleep(1.5)
         while sqrt(pow((goal_pose.x - self.resp_coordinates.pose.position.x), 2) + pow((goal_pose.y - self.resp_coordinates.pose.position.y), 2)) >= distance_tolerance: #現座標と目標座標との距離が一定値以下
             vel_msg.linear.x = 0.5
