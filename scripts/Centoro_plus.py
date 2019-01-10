@@ -83,7 +83,7 @@ class Tutorial:
                 plt.gca().set_aspect('equal')
                 plt.gca().set_xlim([0, 10])
                 plt.gca().set_ylim([0, 10])
-                #plt.savefig(str(num) + '.png', bbox_inches='tight')
+                plt.savefig(str(num) + '.png', bbox_inches='tight')
 
                 if d < d_threshold:
                     plt.savefig(str(num) + '.png', bbox_inches='tight')

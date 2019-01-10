@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from scipy.spatial import Voronoi, voronoi_plot_2d
 from shapely.geometry import Polygon, Point
 from sympy import integrate,Symbol,Matrix
+from math import sqrt
  
 class Centoro:
     @classmethod
@@ -91,12 +92,13 @@ class Tutorial:
 #                plt.savefig(str(num) + '.png', bbox_inches='tight')
                 hyo = []
                 for r in range(5):
-                    print(pts[r])
+                    #print(pts[r])
                     hyo.append(Centoro.coverage(*pts[r]))
-                    print(hyo)
-                print("Ans")
-                print(sum(hyo))
-                hyolist.append(sum(hyo))
+                    #print(hyo)
+#                print("Ans")
+#                print(sum(hyo))
+		print(min(hyo))
+                hyolist.append(min(hyo))
                 if d < d_threshold:
                     plt.savefig(str(num) + '.png', bbox_inches='tight')
                     break
@@ -116,6 +118,10 @@ class Tutorial:
 if __name__ == '__main__':
     tuto = Tutorial()
     tuto.show_gazebo_models()
+
+    
+
+
 
     
 
