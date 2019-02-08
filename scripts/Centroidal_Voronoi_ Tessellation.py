@@ -8,10 +8,11 @@ from shapely.geometry import Polygon, Point
 def centroidal(vor, pts):
     sq = Polygon([[0, 0], [1, 0], [1, 1], [0, 1]])
     maxd = 0.0
-    for i in range(len(pts) - 3):
-        poly = [vor.vertices[v] for v in vor.regions[vor.point_region[i]]]
+    for i in range(len(pts) - 3):#len(pts):ptsの要素数
+        poly = [vor.vertices[v] for v in vor.regions[vor.point_region[i]]] #vor.vertices:領域の頂点,vor.regions:領域
+                                        　#ボロノイ領域[iのボロノイ領域のインデクス]
         i_cell = sq.intersection(Polygon(poly))
-        p = Point(pts[i])
+        p = Point(pts[i])#
         pts[i] = i_cell.centroid.coords[0]
         d = p.distance(Point(pts[i]))
         if maxd < d: maxd = d
@@ -39,3 +40,4 @@ if __name__ == '__main__':
  
         if d < d_threshold:
             break
+5
