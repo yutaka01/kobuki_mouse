@@ -1,0 +1,102 @@
+<!-- Launches Kobuki Gazebo simulation in an empty world -->
+<launch>
+  <!-- start Gazebo with an empty world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="use_sim_time" value="true"/>
+    <arg name="debug" value="false"/>
+    <arg name="world_name" value="$(find kobuki_mouse)/worlds/wall.world"/>
+  </include>
+  
+ <arg name="base"      value="$(optenv TURTLEBOT_BASE kobuki)"/> <!-- create, roomba -->
+  <arg name="battery"   value="$(optenv TURTLEBOT_BATTERY /proc/acpi/battery/BAT0)"/>  <!-- /proc/acpi/battery/BAT0 --> 
+  <arg name="stacks"    value="$(optenv TURTLEBOT_STACKS hexagons)"/>  <!-- circles, hexagons --> 
+  <arg name="3d_sensor" value="$(optenv TURTLEBOT_3D_SENSOR kinect)"/>  <!-- kinect, asus_xtion_pro --> 
+
+  <group ns="r1">
+    <include file="$(find kobuki_mouse)/launch/includes/$(arg base).launch.xml">
+      <arg name="base" value="$(arg base)"/>
+      <arg name="stacks" value="$(arg stacks)"/>
+      <arg name="3d_sensor" value="$(arg 3d_sensor)"/>
+      <arg name="robot_name" value="r1"/>
+      <arg name="init_pose" value="-x 2 -y 3 -z 0"/>
+    </include>
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
+      <param name="publish_frequency" type="double" value="30.0" />
+    </node>
+  </group>
+  
+  <group ns="r2">
+    <include file="$(find kobuki_mouse)/launch/includes/$(arg base).launch.xml">
+      <arg name="base" value="$(arg base)"/>
+      <arg name="stacks" value="$(arg stacks)"/>
+      <arg name="3d_sensor" value="$(arg 3d_sensor)"/>
+      <arg name="robot_name" value="r2"/>
+      <arg name="init_pose" value="-x 1 -y 1 -z 0"/>
+    </include>
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
+      <param name="publish_frequency" type="double" value="30.0" />
+    </node>
+  </group>
+
+  <group ns="r3">
+    <include file="$(find kobuki_mouse)/launch/includes/$(arg base).launch.xml">
+      <arg name="base" value="$(arg base)"/>
+      <arg name="stacks" value="$(arg stacks)"/>
+      <arg name="3d_sensor" value="$(arg 3d_sensor)"/>
+      <arg name="robot_name" value="r3"/>
+      <arg name="init_pose" value="-x 2 -y 1 -z 0"/>
+    </include>
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
+      <param name="publish_frequency" type="double" value="30.0" />
+    </node>
+  </group>
+  <group ns="r4">
+    <include file="$(find kobuki_mouse)/launch/includes/$(arg base).launch.xml">
+      <arg name="base" value="$(arg base)"/>
+      <arg name="stacks" value="$(arg stacks)"/>
+      <arg name="3d_sensor" value="$(arg 3d_sensor)"/>
+      <arg name="robot_name" value="r4"/>
+      <arg name="init_pose" value="-x 1 -y 2 -z 0"/>
+    </include>
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
+      <param name="publish_frequency" type="double" value="30.0" />
+    </node>
+  </group>
+
+  <group ns="r5">
+    <include file="$(find kobuki_mouse)/launch/includes/$(arg base).launch.xml">
+      <arg name="base" value="$(arg base)"/>
+      <arg name="stacks" value="$(arg stacks)"/>
+      <arg name="3d_sensor" value="$(arg 3d_sensor)"/>
+      <arg name="robot_name" value="r5"/>
+      <arg name="init_pose" value="-x 3 -y 2 -z 0"/>
+    </include>
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
+      <param name="publish_frequency" type="double" value="30.0" />
+    </node>
+  </group>
+  <group ns="r6">
+    <include file="$(find kobuki_mouse)/launch/includes/$(arg base).launch.xml">
+      <arg name="base" value="$(arg base)"/>
+      <arg name="stacks" value="$(arg stacks)"/>
+      <arg name="3d_sensor" value="$(arg 3d_sensor)"/>
+      <arg name="robot_name" value="r6"/>
+      <arg name="init_pose" value="-x 1 -y 3 -z 0"/>
+    </include>
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
+      <param name="publish_frequency" type="double" value="30.0" />
+    </node>
+  </group>
+  <group ns="r7">
+    <include file="$(find kobuki_mouse)/launch/includes/$(arg base).launch.xml">
+      <arg name="base" value="$(arg base)"/>
+      <arg name="stacks" value="$(arg stacks)"/>
+      <arg name="3d_sensor" value="$(arg 3d_sensor)"/>
+      <arg name="robot_name" value="r7"/>
+      <arg name="init_pose" value="-x 9 -y 3 -z 0"/>
+    </include>
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
+      <param name="publish_frequency" type="double" value="30.0" />
+    </node>
+  </group>
+</launch>
