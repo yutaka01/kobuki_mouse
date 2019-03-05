@@ -3,7 +3,7 @@ import random , numpy ,rospy
 import matplotlib.pyplot as plt
 from scipy.spatial import Voronoi, voronoi_plot_2d
 from shapely.geometry import Polygon, Point
- 
+#100×10、三台の重心ボロノイ図計算
 class Centoro:
     @classmethod
     def centroidal(self,vor, pts):

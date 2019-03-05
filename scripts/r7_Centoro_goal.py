@@ -95,7 +95,7 @@ class Tutorial:
                     plt.savefig(str(num) + '.png', bbox_inches='tight')
                     break
             global mydict
-            for v in range(5):
+            for v in range(7):
 
                 print(name[v])
                 print(pts[v])#v' = 'pts[v])
@@ -237,7 +237,6 @@ class turtlebot():
         #rospy.spin()
 
     def r2goal(self):
-        print(mydict["r2"][0])
         goal_pose = Po()
         goal_pose.x = mydict["r2"][0]
         goal_pose.y = mydict["r2"][1]
@@ -810,7 +809,7 @@ class turtlebot():
         self.velocity_publisher.publish(vel_msg)
 
 
-    def r5goal(self):
+    def r7goal(self):
         print(mydict["r7"][0])
         goal_pose = Po()
         goal_pose.x = mydict["r7"][0]
