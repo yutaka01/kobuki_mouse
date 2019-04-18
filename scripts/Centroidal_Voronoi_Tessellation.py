@@ -40,4 +40,3 @@ if __name__ == '__main__':
  
         if d < d_threshold:
             break
-5
