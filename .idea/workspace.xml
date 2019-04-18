@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d8dbee84-b635-4a66-a666-8a2444784e5a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/r3_gazebo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/r3_gazebo_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/r3_gazebo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/r3_gazebo_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/r3_gazebo_f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r3/r3_gazebo_idougo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/3dai_gazebo_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/3dai_gazebo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/3dai_gazebo_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/3dai_gazebo_20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/3dai_gazebo_f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/r7/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/34.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/35.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/37.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/39.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/41.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/42.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/43.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/44.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/45.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/46.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/49.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/anim.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/anime.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/weighted_voronoi/boots-stipple.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/weighted_voronoi/boots-stipple.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/weighted_voronoi/boots-stipple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/weighted_voronoi/boots.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/weighted_voronoi/gradient-stipple.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/weighted_voronoi/gradient-stipple.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/weighted_voronoi/gradient-stipple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/weighted_voronoi/gradient.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/weighted_voronoi/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/weighted_voronoi/stippler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/weighted_voronoi/voronoi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/voronoi_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/voronoi_f.png" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/voronoi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="129" column="41" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
+              <folding>
+                <element signature="e#240#258#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/stippler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-582">
+              <caret line="180" column="24" lean-forward="true" selection-start-line="180" selection-start-column="24" selection-end-line="180" selection-end-column="24" />
+              <folding>
+                <element signature="e#1893#1904#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/07.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/Centroidal_Voronoi_Tessellation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/scripts/Centroidal_Voronoi_Tessellation.py" />
+        <option value="$PROJECT_DIR$/scripts/Centoro_goal.py" />
+        <option value="$PROJECT_DIR$/scripts/weighted_voronoi/stippler.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="420" />
+    <option name="y" value="103" />
+    <option name="width" value="1384" />
+    <option name="height" value="854" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="kobuki_mouse" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/catkin_ws/src/kobuki_mouse" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="kobuki_mouse" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/catkin_ws/src/kobuki_mouse" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="scripts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="kobuki_mouse" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/catkin_ws/src/kobuki_mouse" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="scripts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="weighted_voronoi" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="kobuki_mouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kobuki_mouse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kobuki_mouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kobuki_mouse" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kobuki_mouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kobuki_mouse" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="n=20" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kobuki_mouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kobuki_mouse" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="weighted_voronoi" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts/weighted_voronoi" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Centroidal_Voronoi_Tessellation" type="PythonConfigurationType" factoryName="Python">
+      <module name="kobuki_mouse" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/Centroidal_Voronoi_Tessellation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8dbee84-b635-4a66-a666-8a2444784e5a" name="Default Changelist" comment="" />
+      <created>1555318986736</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555318986736</updated>
+    </task>
+    <task id="LOCAL-00001" summary="0418">
+      <created>1555570721120</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555570721120</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="0" width="1922" height="1053" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18105263" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3295711" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4994737" visible="true" weight="0.26198083" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005263" side_tool="true" weight="0.26198083" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="0418" />
+    <option name="LAST_COMMIT_MESSAGE" value="0418" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scripts/Centoro_goal.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/scripts/29.png" />
+    <entry file="file://$PROJECT_DIR$/scripts/28.png" />
+    <entry file="file://$PROJECT_DIR$/scripts/00.png" />
+    <entry file="file://$PROJECT_DIR$/scripts/87.png" />
+    <entry file="file://$PROJECT_DIR$/scripts/Centoro_goal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/purasu.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/scipy/spatial/_plotutils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/r7_Centoro_goal.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/rotate2.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/gotogoal.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/gotogoal_dev.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Centroidal_Voronoi_Tessellation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/voronoi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="129" column="41" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
+          <folding>
+            <element signature="e#240#258#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/stippler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-582">
+          <caret line="180" column="24" lean-forward="true" selection-start-line="180" selection-start-column="24" selection-end-line="180" selection-end-column="24" />
+          <folding>
+            <element signature="e#1893#1904#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/06.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/07.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+  </component>
+</project>
