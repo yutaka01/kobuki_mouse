@@ -36,7 +36,8 @@ if __name__ == '__main__':
         plt.gca().set_aspect('equal')
         plt.gca().set_xlim([0, 1])
         plt.gca().set_ylim([0, 1])
-        plt.savefig(str(i).zfill(2) + '.png', bbox_inches='tight')
+        #plt.savefig(str(i).zfill(2) + '.png', bbox_inches='tight')
  
         if d < d_threshold:
             break
+    plt.show()

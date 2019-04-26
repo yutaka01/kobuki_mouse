@@ -1,7 +1,10 @@
+# coding: UTF-8
 # -----------------------------------------------------------------------------
 # Weighted Voronoi Stippler
 # Copyright (2017) Nicolas P. Rougier - BSD license
 # -----------------------------------------------------------------------------
+
+
 import numpy as np
 import scipy.spatial
 
@@ -11,6 +14,7 @@ def rasterize(V):
 
     Given an ordered set of vertices V describing a polygon,
     return all the (integer) points inside the polygon.
+    多角形を記述する頂点Vの順序付き集合が与えられた場合、多角形内のすべての（整数）点を返します。
     See http://alienryderflex.com/polygon_fill/
 
     Parameters:
@@ -59,6 +63,7 @@ def rasterize_outline(V):
 
     Given an ordered set of vertices V describing a polygon,
     return all the (integer) points for the polygon outline.
+    多角形を記述する頂点Vの順序付き集合を考えて、多角形アウトラインのすべての（整数）点を返します。
     See http://alienryderflex.com/polygon_fill/
 
     Parameters:
@@ -99,13 +104,16 @@ def weighted_centroid_outline(V, P, Q):
     """
     Given an ordered set of vertices V describing a polygon,
     return the surface weighted centroid according to density P & Q.
+    多角形を記述する順序付けられた頂点Vの集合が与えられたとき、密度P＆Qに従って表面重み付き重心を返します。
 
     P & Q are computed relatively to density:
+    P＆Qは密度に対して相対的に計算されます。
     density_P = density.cumsum(axis=1)
     density_Q = density_P.cumsum(axis=1)
 
     This works by first rasterizing the polygon and then
     finding the center of mass over all the rasterized points.
+    これは、最初に多角形をラスタライズしてから、ラスタライズされたすべての点の重心を見つけることによって機能します。
     """
 
     O = rasterize_outline(V)
@@ -128,6 +136,7 @@ def uniform_centroid(V):
     """
     Given an ordered set of vertices V describing a polygon,
     returns the uniform surface centroid.
+    多角形を記述する順序付けられた頂点Vの集合が与えられた場合、一様な表面重心を返します。
 
     See http://paulbourke.net/geometry/polygonmesh/
     """
@@ -148,16 +157,18 @@ def weighted_centroid(V, D):
     """
     Given an ordered set of vertices V describing a polygon,
     return the surface weighted centroid according to density D.
+    多角形を記述する頂点Vの順序付き集合が与えられた場合、密度Dに従って表面重み付き重心を返します。
 
     This works by first rasterizing the polygon and then
     finding the center of mass over all the rasterized points.
+    これは、最初に多角形をラスタライズしてから、ラスタライズされたすべての点の重心を見つけることによって機能します。
     """
 
     P = rasterize(V)
     Pi = P.astype(int)
     Pi[:, 0] = np.minimum(Pi[:, 0], D.shape[1]-1)
     Pi[:, 1] = np.minimum(Pi[:, 1], D.shape[0]-1)
-    D = D[Pi[:, 1], Pi[:, 0]].reshape(len(Pi), 1)
+    D = D[Pi[:, 1], Pi[:, 0]].reshape(len(Pi), 1) #https://note.nkmk.me/python-numpy-reshape-usage/
     return ((P*D)).sum(axis=0) / D.sum()
 
 
@@ -223,6 +234,7 @@ def centroids(points, density, density_P=None, density_Q=None):
     """
     Given a set of point and a density array, return the set of weighted
     centroids.
+    一組の点と密度配列が与えられたら、一組の加重重心を返します。
     """
 
     X, Y = points[:,0], points[:, 1]

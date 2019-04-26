@@ -1,4 +1,6 @@
 #! /usr/bin/env python3
+# coding: UTF-8
+
 # -----------------------------------------------------------------------------
 # Weighted Voronoi Stippler
 # Copyright (2017) Nicolas P. Rougier - BSD license
@@ -135,20 +137,23 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     filename = args.filename
-    density = scipy.misc.imread(filename, flatten=True, mode='L')
+    density = scipy.misc.imread(filename, flatten=True, mode='L') # 密度分布の読み込み
+    # tps://docs.scipy.org/doc/scipy/reference/generated/scipy.misc.imread.html
 
     # We want (approximately) 500 pixels per voronoi region
     zoom = (args.n_point * 500) / (density.shape[0]*density.shape[1])
     zoom = int(round(np.sqrt(zoom)))
     density = scipy.ndimage.zoom(density, zoom, order=0)
+    # https://docs.scipy.org/doc/scipy/reference/generated/scipy.ndimage.zoom.html
+
     # Apply threshold onto image
     # Any color > threshold will be white
     density = np.minimum(density, args.threshold)
 
     density = 1.0 - normalize(density)
     density = density[::-1, :]
-    density_P = density.cumsum(axis=1)
-    density_Q = density_P.cumsum(axis=1)
+    density_P = density.cumsum(axis=1) #累積和
+    density_Q = density_P.cumsum(axis=1) #累積和
 
     dirname = os.path.dirname(filename)
     basename = (os.path.basename(filename).split('.'))[0]
@@ -156,7 +161,7 @@ if __name__ == '__main__':
     png_filename = os.path.join(dirname, basename + "-stipple.png")
     dat_filename = os.path.join(dirname, basename + "-stipple.npy")
 
-    # Initialization
+    # Initialization　初期化
     if not os.path.exists(dat_filename) or args.force:
         points = initialization(args.n_point, density)
         print("Nb points:", args.n_point)
@@ -170,7 +175,6 @@ if __name__ == '__main__':
     print("Output file (PDF): %s " % pdf_filename)
     print("            (PNG): %s " % png_filename)
     print("            (DAT): %s " % dat_filename)
-
         
     xmin, xmax = 0, density.shape[1]
     ymin, ymax = 0, density.shape[0]
