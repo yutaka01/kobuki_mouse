@@ -108,7 +108,7 @@ def weighted_centroid_outline(V, P, Q):
 
     P & Q are computed relatively to density:
     P＆Qは密度に対して相対的に計算されます。
-    density_P = density.cumsum(axis=1)
+    density_P = density.cumsum(axis=1)https://qiita.com/Sa_qiita/items/fc61f776cef657242e69
     density_Q = density_P.cumsum(axis=1)
 
     This works by first rasterizing the polygon and then
@@ -236,8 +236,9 @@ def centroids(points, density, density_P=None, density_Q=None):
     centroids.
     一組の点と密度配列が与えられたら、一組の加重重心を返します。
     """
-
-    X, Y = points[:,0], points[:, 1]
+    print(type(points))
+    print(points[:, 0])
+    X, Y = points[:, 0], points[:, 1]
     # You must ensure:
     #   0 < X.min() < X.max() < density.shape[0]
     #   0 < Y.min() < Y.max() < density.shape[1]
@@ -253,10 +254,10 @@ def centroids(points, density, density_P=None, density_Q=None):
         # vertices = vor.filtered_points[region + [region[0]], :]
 
         # Full version from all the points
-        # centroid = weighted_centroid(vertices, density)
+        centroid = weighted_centroid(vertices, density)
 
         # Optimized version from only the outline
-        centroid = weighted_centroid_outline(vertices, density_P, density_Q)
+        #centroid = weighted_centroid_outline(vertices, density_P, density_Q)
 
         centroids.append(centroid)
     return regions, np.array(centroids)

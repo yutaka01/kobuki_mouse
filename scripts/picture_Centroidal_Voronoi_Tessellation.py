@@ -29,13 +29,12 @@ def centroidal(vor, pts,n):
 if __name__ == '__main__':
     n = 20
     pts = [[random.random(), random.random()] for i in range(n)]
-    #pts = pts + [[100, 100], [100, -100], [-100, 0]]
+    pts = pts + [[100, 100], [100, -100], [-100, 0]]
  
     plt.figure(figsize=(6, 6))
     d_threshold = 0.001
  
     for i in range(100):
-	
         vor = Voronoi(pts)
         d = centroidal(vor, pts,i)
         plt.cla()
@@ -44,8 +43,7 @@ if __name__ == '__main__':
         plt.gca().set_aspect('equal')
         plt.gca().set_xlim([0, 1])
         plt.gca().set_ylim([0, 1])
-        plt.savefig(str(i).zfill(2) + '.png', bbox_inches='tight')
+        #plt.savefig(str(i).zfill(2) + '.png', bbox_inches='tight')
  
         if d < d_threshold:
             break
-5

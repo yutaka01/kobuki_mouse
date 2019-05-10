@@ -43,9 +43,9 @@ if __name__ == '__main__':
         plt.gca().set_xlim([0, 10])
         plt.gca().set_ylim([0, 10])
         if num == 1:
-            plt.savefig(str(num) + '.png', bbox_inches='tight')
+            #plt.savefig(str(num) + '.png', bbox_inches='tight')
         if d < d_threshold:
-            plt.savefig(str(num) + '.png', bbox_inches='tight')
+            #plt.savefig(str(num) + '.png', bbox_inches='tight')
             break
     for v in range(n):
         print('X%d=' %(v+1))

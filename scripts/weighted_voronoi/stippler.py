@@ -48,10 +48,11 @@ import scipy.misc
 import scipy.ndimage
 import numpy as np
 
+
 def normalize(D):
     Vmin, Vmax = D.min(), D.max()
     if Vmax - Vmin > 1e-5:
-        D = (D-Vmin)/(Vmax-Vmin)
+        D = (D - Vmin) / (Vmax - Vmin)
     else:
         D = np.zeros_like(D)
     return D
@@ -61,10 +62,8 @@ def initialization(n, D):
     """
     Return n points distributed over [xmin, xmax] x [ymin, ymax]
     according to (normalized) density distribution.
-
     with xmin, xmax = 0, density.shape[1]
          ymin, ymax = 0, density.shape[0]
-
     The algorithm here is a simple rejection sampling.
     """
 
@@ -72,9 +71,9 @@ def initialization(n, D):
     while len(samples) < n:
         # X = np.random.randint(0, density.shape[1], 10*n)
         # Y = np.random.randint(0, density.shape[0], 10*n)
-        X = np.random.uniform(0, density.shape[1], 10*n)
-        Y = np.random.uniform(0, density.shape[0], 10*n)
-        P = np.random.uniform(0, 1, 10*n)
+        X = np.random.uniform(0, density.shape[1], 10 * n)
+        Y = np.random.uniform(0, density.shape[0], 10 * n)
+        P = np.random.uniform(0, 1, 10 * n)
         index = 0
         while index < len(X) and len(samples) < n:
             x, y = X[index], Y[index]
@@ -83,7 +82,6 @@ def initialization(n, D):
                 samples.append([x, y])
             index += 1
     return np.array(samples)
-
 
 
 if __name__ == '__main__':
@@ -137,11 +135,11 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     filename = args.filename
-    density = scipy.misc.imread(filename, flatten=True, mode='L') # 密度分布の読み込み
+    density = scipy.misc.imread(filename, flatten=True, mode='L')  # 密度分布の読み込み
     # tps://docs.scipy.org/doc/scipy/reference/generated/scipy.misc.imread.html
 
     # We want (approximately) 500 pixels per voronoi region
-    zoom = (args.n_point * 500) / (density.shape[0]*density.shape[1])
+    zoom = (args.n_point * 500) / (density.shape[0] * density.shape[1])
     zoom = int(round(np.sqrt(zoom)))
     density = scipy.ndimage.zoom(density, zoom, order=0)
     # https://docs.scipy.org/doc/scipy/reference/generated/scipy.ndimage.zoom.html
@@ -152,9 +150,9 @@ if __name__ == '__main__':
 
     density = 1.0 - normalize(density)
     density = density[::-1, :]
-    density_P = density.cumsum(axis=1) #累積和
-    density_Q = density_P.cumsum(axis=1) #累積和
-
+    density_P = density.cumsum(axis=1)  # 累積和
+    density_Q = density_P.cumsum(axis=1)  # 累積和
+    print(density)
     dirname = os.path.dirname(filename)
     basename = (os.path.basename(filename).split('.'))[0]
     pdf_filename = os.path.join(dirname, basename + "-stipple.pdf")
@@ -171,21 +169,21 @@ if __name__ == '__main__':
         print("Nb points:", len(points))
         print("Nb iterations: -")
     print("Density file: %s (resized to %dx%d)" % (
-          filename, density.shape[1], density.shape[0]))
+        filename, density.shape[1], density.shape[0]))
     print("Output file (PDF): %s " % pdf_filename)
     print("            (PNG): %s " % png_filename)
     print("            (DAT): %s " % dat_filename)
-        
+
     xmin, xmax = 0, density.shape[1]
     ymin, ymax = 0, density.shape[0]
     bbox = np.array([xmin, xmax, ymin, ymax])
-    ratio = (xmax-xmin)/(ymax-ymin)
+    ratio = (xmax - xmin) / (ymax - ymin)
 
     # Interactive display
     if args.interactive:
 
         # Setup figure
-        fig = plt.figure(figsize=(args.figsize, args.figsize/ratio),
+        fig = plt.figure(figsize=(args.figsize, args.figsize / ratio),
                          facecolor="white")
         ax = fig.add_axes([0, 0, 1, 1], frameon=False)
         ax.set_xlim([xmin, xmax])
@@ -195,6 +193,7 @@ if __name__ == '__main__':
         scatter = ax.scatter(points[:, 0], points[:, 1], s=1,
                              facecolor="k", edgecolor="None")
 
+
         def update(frame):
             global points
             # Recompute weighted centroids
@@ -202,46 +201,46 @@ if __name__ == '__main__':
 
             # Update figure
             Pi = points.astype(int)
-            X = np.maximum(np.minimum(Pi[:, 0], density.shape[1]-1), 0)
-            Y = np.maximum(np.minimum(Pi[:, 1], density.shape[0]-1), 0)
+            X = np.maximum(np.minimum(Pi[:, 0], density.shape[1] - 1), 0)
+            Y = np.maximum(np.minimum(Pi[:, 1], density.shape[0] - 1), 0)
             sizes = (args.pointsize[0] +
-                     (args.pointsize[1]-args.pointsize[0])*density[Y, X])
+                     (args.pointsize[1] - args.pointsize[0]) * density[Y, X])
             scatter.set_offsets(points)
             scatter.set_sizes(sizes)
             bar.update()
 
             # Save result at last frame
-            if (frame == args.n_iter-2 and
-                      (not os.path.exists(dat_filename) or args.save)):
+            if (frame == args.n_iter - 2 and
+                    (not os.path.exists(dat_filename) or args.save)):
                 np.save(dat_filename, points)
                 plt.savefig(pdf_filename)
                 plt.savefig(png_filename)
 
+
         bar = tqdm.tqdm(total=args.n_iter)
         animation = FuncAnimation(fig, update,
-                                  repeat=False, frames=args.n_iter-1)
+                                  repeat=False, frames=args.n_iter - 1)
         plt.show()
 
     elif not os.path.exists(dat_filename) or args.force:
         for i in tqdm.trange(args.n_iter):
             regions, points = voronoi.centroids(points, density, density_P, density_Q)
 
-            
     if (args.save or args.display) and not args.interactive:
-        fig = plt.figure(figsize=(args.figsize, args.figsize/ratio),
+        fig = plt.figure(figsize=(args.figsize, args.figsize / ratio),
                          facecolor="white")
         ax = fig.add_axes([0, 0, 1, 1], frameon=False)
         ax.set_xlim([xmin, xmax])
         ax.set_xticks([])
         ax.set_ylim([ymin, ymax])
         ax.set_yticks([])
-        scatter = ax.scatter(points[:, 0], points[:, 1], s=1, 
+        scatter = ax.scatter(points[:, 0], points[:, 1], s=1,
                              facecolor="k", edgecolor="None")
         Pi = points.astype(int)
-        X = np.maximum(np.minimum(Pi[:, 0], density.shape[1]-1), 0)
-        Y = np.maximum(np.minimum(Pi[:, 1], density.shape[0]-1), 0)
+        X = np.maximum(np.minimum(Pi[:, 0], density.shape[1] - 1), 0)
+        Y = np.maximum(np.minimum(Pi[:, 1], density.shape[0] - 1), 0)
         sizes = (args.pointsize[0] +
-                 (args.pointsize[1]-args.pointsize[0])*density[Y, X])
+                 (args.pointsize[1] - args.pointsize[0]) * density[Y, X])
         scatter.set_offsets(points)
         scatter.set_sizes(sizes)
 
