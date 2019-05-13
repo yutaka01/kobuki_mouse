@@ -12,11 +12,11 @@ from shapely.geometry import Polygon, Point
  
 
 def centroidal(vor, pts):
-    sq = Polygon([[0, 0], [1, 0], [1, 1], [0, 1]])
+    sq = Polygon([[0, 0], [952, 0], [952, 952], [0, 952]])
     maxd = 0.0
     for i in range(len(pts) - 3):
         poly = [vor.vertices[v] for v in vor.regions[vor.point_region[i]]]
-        i_cell = sq.intersection(Polygon(poly)) #sq&Polygon(poly)と等価
+        i_cell = sq.intersection(Polygon(poly))
         p = Point(pts[i])
         pts[i] = i_cell.centroid.coords[0]
         d = p.distance(Point(pts[i]))
@@ -305,7 +305,6 @@ if __name__ == '__main__':
     #https://docs.scipy.org/doc/scipy/reference/generated/scipy.misc.imread.html
     density = 1.0 - normalize(density)
     density = density[::-1, :]
-    print(density)
     density_P = density.cumsum(axis=1)  # 累積和
     density_Q = density_P.cumsum(axis=1)  # 累積和
 
@@ -315,19 +314,22 @@ if __name__ == '__main__':
     points = np.array(points)
     plt.figure(figsize=(6, 6))
     d_threshold = 0.001
+    num = 0
     print(type(points))
     for i in range(100):
         vor = Voronoi(points)
         d = centroids(points, density)
- 
+        d2 = centroidal(vor, d)
+        num += 1
         plt.cla()
         voronoi_plot_2d(vor, ax=plt.gca(), show_vertices=False)
-        
+
         plt.gca().set_aspect('equal')
         plt.gca().set_xlim([0, 952])
         plt.gca().set_ylim([0, 952])
+        plt.plot(d[:,0], d[:,1], 'o')
+        #plt.show()
         #plt.savefig(str(i).zfill(2) + '.png', bbox_inches='tight')
- 
-        if d < d_threshold:
-            break
+        #if 30 < num:
+            #break
     plt.show()

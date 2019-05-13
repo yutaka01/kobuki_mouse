@@ -2,80 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8dbee84-b635-4a66-a666-8a2444784e5a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/weighted_voronoi/Weighted_Centroidal_Voronoi_Tessellation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/weighted_voronoi/multi_agent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/00.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/00.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/01.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/01.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/02.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/02.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/03.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/03.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/04.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/04.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/05.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/05.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/06.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/06.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/07.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/07.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/08.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/08.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/09.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/09.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/12.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/13.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/13.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/14.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/14.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/15.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/15.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/16.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/17.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/17.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/18.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/18.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/19.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/19.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/20.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/20.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/21.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/21.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/22.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/22.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/23.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/23.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/24.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/24.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/Centoro.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Centoro.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/Centroidal_Voronoi_Tessellation.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Centroidal_Voronoi_Tessellation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/picture_Centroidal_Voronoi_Tessellation.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/picture_Centroidal_Voronoi_Tessellation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/weighted_voronoi/gradient-stipple.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/weighted_voronoi/gradient-stipple.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/weighted_voronoi/gradient-stipple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/weighted_voronoi/gradient.png" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/weighted_voronoi/gradient.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/weighted_voronoi/stippler.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/weighted_voronoi/stippler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/weighted_voronoi/voronoi.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/weighted_voronoi/voronoi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/weighted_voronoi/Weighted_Centroidal_Voronoi_Tessellation.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/weighted_voronoi/Weighted_Centroidal_Voronoi_Tessellation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/scripts/picture_Centroidal_Voronoi_Tessellation.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="180">
-                    <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/scripts/Centroidal_Voronoi_Tessellation.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="334">
-                    <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-                    <folding>
-                      <element signature="e#39#52#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="kobuki_mouse" />
@@ -84,11 +19,33 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/Weighted_Centroidal_Voronoi_Tessellation.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="45">
+                  <caret line="3" selection-start-line="3" selection-end-line="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/matplotlib/transforms.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="179">
+                  <caret line="2065" selection-start-line="2065" selection-end-line="2065" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/stippler.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="84">
-                  <caret line="236" column="53" selection-start-line="236" selection-start-column="53" selection-end-line="236" selection-end-column="53" />
+                <state relative-caret-position="174">
+                  <caret line="133" column="69" selection-start-line="133" selection-start-column="69" selection-end-line="133" selection-end-column="69" />
                   <folding>
                     <element signature="e#1910#1921#0" expanded="true" />
                   </folding>
@@ -97,19 +54,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/run.py">
+            <entry file="file://$PROJECT_DIR$/scripts/Centroidal_Voronoi_Tessellation.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/Weighted_Centroidal_Voronoi_Tessellation.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1885">
-                  <caret line="319" column="25" selection-start-line="319" selection-start-column="25" selection-end-line="319" selection-end-column="25" />
+                <state relative-caret-position="159">
+                  <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
                   <folding>
                     <element signature="e#39#52#0" expanded="true" />
                   </folding>
@@ -117,34 +65,35 @@
               </provider>
             </entry>
           </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/voronoi.py">
+            <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/multi_agent.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="630">
-                  <caret line="207" column="39" selection-start-line="207" selection-start-column="39" selection-end-line="207" selection-end-column="39" />
+                <state relative-caret-position="195">
+                  <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
                   <folding>
-                    <element signature="e#258#276#0" expanded="true" />
+                    <element signature="e#40#58#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/weighted_centroidal.py">
+            <entry file="file://$PROJECT_DIR$/scripts/Centoro_dev.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3465">
-                  <caret line="236" selection-start-line="236" selection-end-line="236" />
-                </state>
+                <state relative-caret-position="-1335" />
               </provider>
             </entry>
           </file>
         </leaf>
       </split-second>
     </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -153,14 +102,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/scripts/Centoro_goal.py" />
-        <option value="$PROJECT_DIR$/scripts/Centroidal_Voronoi_Tessellation.py" />
         <option value="$PROJECT_DIR$/scripts/weighted_voronoi/stippler.py" />
         <option value="$PROJECT_DIR$/scripts/weighted_voronoi/voronoi.py" />
         <option value="$PROJECT_DIR$/scripts/weighted_voronoi/weighted_centroidal.py" />
         <option value="$PROJECT_DIR$/scripts/weighted_voronoi/Centroidal_Voronoi_Tessellation.py" />
         <option value="$PROJECT_DIR$/scripts/Centoro.py" />
         <option value="$PROJECT_DIR$/scripts/picture_Centroidal_Voronoi_Tessellation.py" />
+        <option value="$PROJECT_DIR$/scripts/Centroidal_Voronoi_Tessellation.py" />
         <option value="$PROJECT_DIR$/scripts/weighted_voronoi/Weighted_Centroidal_Voronoi_Tessellation.py" />
+        <option value="$PROJECT_DIR$/scripts/weighted_voronoi/multi_agent.py" />
       </list>
     </option>
   </component>
@@ -176,28 +126,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="kobuki_mouse" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/catkin_ws/src/kobuki_mouse" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="kobuki_mouse" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/catkin_ws/src/kobuki_mouse" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="scripts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="kobuki_mouse" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/catkin_ws/src/kobuki_mouse" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="scripts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="weighted_voronoi" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,14 +153,40 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="kobuki_mouse" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/catkin_ws/src/kobuki_mouse" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="kobuki_mouse" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/catkin_ws/src/kobuki_mouse" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="scripts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="kobuki_mouse" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/catkin_ws/src/kobuki_mouse" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="scripts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="weighted_voronoi" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/scripts/weighted_voronoi" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts/weighted_voronoi" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/scripts/weighted_voronoi" />
     </key>
@@ -249,7 +203,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Centroidal_Voronoi_Tessellation (1)">
+  <component name="RunManager" selected="Python.multi_agent">
     <configuration name="Centoro" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="kobuki_mouse" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -313,6 +267,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="multi_agent" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="kobuki_mouse" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts/weighted_voronoi" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/weighted_voronoi/multi_agent.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="picture_Centroidal_Voronoi_Tessellation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="kobuki_mouse" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -334,7 +309,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="voronoi" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="stippler" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="kobuki_mouse" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -346,28 +321,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/weighted_voronoi/voronoi.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="weighted_centroidal" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="kobuki_mouse" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts/weighted_voronoi" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/weighted_voronoi/weighted_centroidal.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/weighted_voronoi/stippler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -378,11 +332,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.multi_agent" />
         <item itemvalue="Python.Centroidal_Voronoi_Tessellation (1)" />
+        <item itemvalue="Python.stippler" />
         <item itemvalue="Python.picture_Centroidal_Voronoi_Tessellation" />
         <item itemvalue="Python.Centoro" />
-        <item itemvalue="Python.weighted_centroidal" />
-        <item itemvalue="Python.voronoi" />
       </list>
     </recent_temporary>
   </component>
@@ -418,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556274114917</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="0510">
+      <created>1557495568999</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1557495568999</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -434,19 +395,19 @@
     <frame x="-1" y="0" width="1922" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49468085" visible="true" weight="0.18052632" />
-      <window_info id="Structure" order="1" sideWeight="0.5053192" side_tool="true" visible="true" weight="0.18052632" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4893617" visible="true" weight="0.18052632" />
+      <window_info id="Structure" order="1" sideWeight="0.5106383" side_tool="true" visible="true" weight="0.18052632" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290735" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49842104" weight="0.3290735" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49684212" visible="true" weight="0.399361" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49631578" visible="true" weight="0.399361" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290735" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3290735" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49894738" weight="0.26091588" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5031579" side_tool="true" weight="0.399361" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5036842" side_tool="true" weight="0.399361" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49631578" weight="0.3290735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -457,7 +418,8 @@
     <MESSAGE value="0418" />
     <MESSAGE value="0418-2" />
     <MESSAGE value="0426" />
-    <option name="LAST_COMMIT_MESSAGE" value="0426" />
+    <MESSAGE value="0510" />
+    <option name="LAST_COMMIT_MESSAGE" value="0510" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -467,7 +429,19 @@
           <line>93</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scripts/Centroidal_Voronoi_Tessellation.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -555,32 +529,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/weighted_centroidal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3465">
-          <caret line="236" selection-start-line="236" selection-end-line="236" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/voronoi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="207" column="39" selection-start-line="207" selection-start-column="39" selection-end-line="207" selection-end-column="39" />
-          <folding>
-            <element signature="e#258#276#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/Centoro_plus.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="1162" column="25" selection-start-line="1162" selection-start-column="25" selection-end-line="1162" selection-end-column="25" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/100_10_3dai_goal.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -588,12 +538,33 @@
     <entry file="file://$PROJECT_DIR$/scripts/Centoro_1.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/stippler.py">
+    <entry file="file://$PROJECT_DIR$/scripts/picture_Centroidal_Voronoi_Tessellation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="236" column="53" selection-start-line="236" selection-start-column="53" selection-end-line="236" selection-end-column="53" />
+        <state relative-caret-position="180">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26355">
+          <caret line="1757" selection-start-line="1757" selection-end-line="1757" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/weighted_centroidal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="180" column="18" selection-start-line="180" selection-start-column="18" selection-end-line="180" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/voronoi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="207" column="39" selection-start-line="207" selection-start-column="39" selection-end-line="207" selection-end-column="39" />
           <folding>
-            <element signature="e#1910#1921#0" expanded="true" />
+            <element signature="e#258#276#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -605,17 +576,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/picture_Centroidal_Voronoi_Tessellation.py">
+    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/matplotlib/transforms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        <state relative-caret-position="179">
+          <caret line="2065" selection-start-line="2065" selection-end-line="2065" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Centoro_dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1335" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/stippler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="133" column="69" selection-start-line="133" selection-start-column="69" selection-end-line="133" selection-end-column="69" />
+          <folding>
+            <element signature="e#1910#1921#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/gradient.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/Centroidal_Voronoi_Tessellation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        <state relative-caret-position="159">
+          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
           <folding>
             <element signature="e#39#52#0" expanded="true" />
           </folding>
@@ -624,10 +613,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/Weighted_Centroidal_Voronoi_Tessellation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1885">
-          <caret line="319" column="25" selection-start-line="319" selection-start-column="25" selection-end-line="319" selection-end-column="25" />
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/weighted_voronoi/multi_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
           <folding>
-            <element signature="e#39#52#0" expanded="true" />
+            <element signature="e#40#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
