@@ -2,7 +2,7 @@
 # coding: UTF-8
 
 import numpy as np
-import autograd.numpy as np
+import autograd.numpy as na
 from autograd import grad, jacobian
 import matplotlib.pyplot as plt
 from scipy.integrate import dblquad
@@ -28,33 +28,38 @@ def jacobi(A, b, tol):
 """
 
 def phi(q, p):
-    a = 0
     return min(np.sqrt(sum((q - (np.reshape(p, (2, 5), order='F')) ** 2))))
 
 def phiv(X, Y, p):
     bubun = phi_partial(p)
     print(type(bubun))
     print(X, Y)
-    return lambda x, y: map(bubun(q = np.array[x, y].T), [X, Y])
+    hozon = [X,Y]
+    a = lambda x, y: list(bubun(q = np.array(x, y).T), X)
+    lambda x, y: a.append(bubun(np.array(x, y).T), Y)
+    return a
 
-def I(p):
+def I(a):
+    p = p.tolist()
     bubun2 = phiv_partial(p)
-    print(type(bubun2))
+    print(type(p))
     print(bubun2)
     #plt.plot(bubun[:, 0:-2:2], bubun[:, 1::2], '.-')
     print(bubun2)
     return dblquad(lambda X, Y: bubun2(X = X, Y = Y), 0, 1, 0, 1)
 
-def dJdp(p):
+""""
+def dJdp(a):
     return approx_jacobian(p, I(p))
 
-def phiv_partial(p):
+def phiv_partial(a):
     return partial(phiv, p = p)
 
-def phi_partial(p):
+def phi_partial(a):
     return partial(phi, p = p)
 
 if __name__ == '__main__':
+    global p
     N = 5.
     values = np.random.rand(2*5, 1)
     p = 0.2*values

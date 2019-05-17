@@ -38,11 +38,9 @@ def main():
         """
         数値的に求めるh(x)のヤコビアン
         """
-        global alt
         x = (x[0,0],x[1,0])
         h = lambda x: np.asfarray([h_(x,p0),h_(x,p1),h_(x,p2)])
-        alt = np.mat(approx_jacobian(x,h,np.sqrt(np.finfo(float).eps)))
-        return alt
+        return np.mat(approx_jacobian(x,h,np.sqrt(np.finfo(float).eps)))
      
     # 観測データの生成
     for i in range(T):
