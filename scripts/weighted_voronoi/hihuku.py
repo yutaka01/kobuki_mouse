@@ -4,39 +4,54 @@
 import random
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.integrate import dblquad
+from scipy.integrate import dblquad, ode
 from scipy.optimize.slsqp import approx_jacobian
+from functools import partial
 
 
 def phi(X, Y, p):
-    p = np.reshape(p, (2, n), order='F')
+    #print(p)
+
     hyolist = []
     for i in range(5):
         hyo = ((X - p[0][i]) ** 2 + (Y - p[1][i]) ** 2)
         hyolist.append(hyo)
     #print(min(hyolist))
     a = 1
-    #print(min(hyolist))
+    print(min(hyolist))
+    global num
+    num += 1
+    print(num)
     return min(hyolist)
-def J(p):
 
+def J(p):
+    #print(p)
     #print(p[1][2])
     a =  dblquad(lambda X, Y: phi(X, Y, p), 0, 1, 0, 1)
-    print(type(a))
-    return a
+    print(a[0])
+    b = a[0]
+    return b
 
 def dJdp(p):
-    #vf = np.vectorize(J(p))
-    return approx_jacobian(lambda t: p, J(p), np.sqrt(np.finfo(float).eps))
+    #partial(J, p)
+    #vJ = np.vectorize(J)
+    #print(len(p))
+    #print(p)
+    return ode(J(p), jac)
 
 if __name__ == '__main__':
+    num = 0
     n = 5
     #p = [[random.random(), random.random()] for i in  range(n)]
     values = np.random.rand(2*5, 1)
     p = 0.2*values
     P = np.array(p).T
     a = 1
-    vJ = np.vectorize(J)
+    p = p.reshape((2, 5), order='F')
+    print(p)
+    #vJ = np.vectorize(J)
+    #print(type(vJ))
+    #print(vJ(p))
     #phi =  min(np.sqrt(sum((q - (np.reshape(p, (2, n), order='F')) ** 2))))
     #J = dblquad(q: phi(x, y), 0, 1, 0, 1)
     print(dJdp(p))
