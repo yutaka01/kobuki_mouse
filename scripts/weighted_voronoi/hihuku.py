@@ -39,7 +39,7 @@ def dJdp(p):
     #print(p)
     return ode(J(p), jac)
 
-if __name__ == '__main__':
+
     num = 0
     n = 5
     #p = [[random.random(), random.random()] for i in  range(n)]

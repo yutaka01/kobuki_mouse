@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+
 # coding: UTF-8
 
 import numpy as np
@@ -27,12 +28,14 @@ def calc_gradient(f, X):
 
         # f(x+h)
         X[i] += h
+        #print(X)
         f_x_plus_h = f(X)
 
         X = store_X[:]
 
         # f(x-h)
         X[i] -= h
+        #print(X)
         f_x_minus_h = f(X)
 
         # 偏微分
