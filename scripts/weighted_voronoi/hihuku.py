@@ -18,17 +18,17 @@ def phi(X, Y, p):
         hyolist.append(hyo)
     #print(min(hyolist))
     a = 1
-    print(min(hyolist))
+    #print(min(hyolist))
     global num
     num += 1
-    print(num)
+    #print(num)
     return min(hyolist)
 
 def J(p):
     #print(p)
     #print(p[1][2])
     a =  dblquad(lambda X, Y: phi(X, Y, p), 0, 1, 0, 1)
-    print(a[0])
+    #print(a[0])
     b = a[0]
     return b
 
@@ -37,7 +37,7 @@ def dJdp(p):
     #vJ = np.vectorize(J)
     #print(len(p))
     #print(p)
-    return ode(J(p), jac)
+    return approx_jacobian(p, J(p), 0.000000001)
 
 
     num = 0

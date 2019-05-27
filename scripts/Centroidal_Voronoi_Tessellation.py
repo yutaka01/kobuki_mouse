@@ -29,14 +29,14 @@ if __name__ == '__main__':
     for i in range(100):
         vor = Voronoi(pts)
         d = centroidal(vor, pts)
- 
+
         plt.cla()
         voronoi_plot_2d(vor, ax=plt.gca(), show_vertices=False)
         
         plt.gca().set_aspect('equal')
         plt.gca().set_xlim([0, 1])
         plt.gca().set_ylim([0, 1])
-        #plt.savefig(str(i).zfill(2) + '.png', bbox_inches='tight')
+        plt.savefig(str(i).zfill(2) + 'alpha.png', bbox_inches='tight')
  
         if d < d_threshold:
             break
