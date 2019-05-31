@@ -80,9 +80,8 @@ if __name__ == '__main__':
     P = [[1., 1.], [2., 2.], [3., 3.], [4., 4.], [5., 4.]]
     p = np.array(P)
 
-    f = lambda p: dblquad(lambda x, y: phi(x, y, p), 0, 1, 0, 1)
       # np.array([3.0, 4.0])
     X = p
-    gradient_descent(f, X, learning_rate=0.1, max_iter=100)
+    gradient_descent(J(p), X, learning_rate=0.1, max_iter=100)
     plt.plot(p)
     a = 0

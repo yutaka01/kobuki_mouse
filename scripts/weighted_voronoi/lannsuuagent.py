@@ -35,17 +35,26 @@ def J(P):
     return alpha[0]
 
 def dJdp(P):
-    return approx_jacobian(P, J(P), np.sqrt(np.finfo(float).eps))
+    """
+    解析的に求めるh(x)のヤコビアン
+    """
+    h = 1e-4
+    print(P + h)
 
+    return (J(P + h) - J(P - h)) / (2 * h)
 
 if __name__ == '__main__':
     p = [[0.1, 0.1], [0.2, 0.2], [0.3, 0.3], [0.3, 0.4], [0.5, 0.5]]
+    L = [[0.7610379465771577, 0.7524530982591198], [0.2821881968922457, 0.4990158741619455], [0.25222418480336545, 0.16374445265464765], [0.7614853462534725, 0.24779034133153108], [0.25171006025292486, 0.8352072721707632]]
     p = np.array(p)
-    #P = np.conjugate(p.T)
+    l = np.array(L)
+    #P = np.conjugate(p.T)    grad = dJdp(J_x0, p[0, 0])
+    print(J(p))
+    print(J(l))
+
     alpha = 1
-    #h = 0.000000000001
-    #for i in range(5):
-        #p[i] = sym.limit((J(p + h) - J(p))/h, h, 0)
+
+"""
     h = 1e-4
     grad = []
     for i in range(5):
@@ -58,12 +67,8 @@ if __name__ == '__main__':
         print(grad)
         p = tmp
     print(grad)
-    print(p)
-    print(p[0])
-    print(p[1])
     a = 1
 
-"""
     phi = lambda q, p: min(np.sqrt(sum((q - p.reshape((2, N), order='F') ** 2))))
     phiv = lambda X, Y, p: map(lambda x, y: functools.partial(phi, int(p) - 1), [X, Y])
     J = lambda p: dblquad(lambda X, Y: phiv[int(X), int(Y) - 1, int(p) - 1], a=0, b=1, gfun=0, hfun=1)
