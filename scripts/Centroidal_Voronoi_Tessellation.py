@@ -11,17 +11,19 @@ from shapely.geometry import Polygon, Point
 def centroidal(vor, pts):
     sq = Polygon([[0, 0], [1, 0], [1, 1], [0, 1]])
     maxd = 0.0
-    for i in range(len(pts) - 3):
+    for i in range(len(pts)-3):
         poly = [vor.vertices[v] for v in vor.regions[vor.point_region[i]]]
         i_cell = sq.intersection(Polygon(poly)) #sq&Polygon(poly)と等価
         p = Point(pts[i])
         pts[i] = i_cell.centroid.coords[0]
+        print(pts)
         d = p.distance(Point(pts[i]))
         if maxd < d: maxd = d
     return maxd
 
 def phi(Q, P):
-    return np.min(((np.dot((Q - P).T,  (Q - P)))**2))
+    wei = np.array([0.8, 0.6])
+    return np.min(((np.dot((Q - P).T,  (Q - P)))**2)*(np.exp((Q - wei)/20)))
 
 def J(P):
     alpha = dblquad(lambda x, y: phi([x, y], P), 0, 1, 0, 1)
@@ -29,7 +31,7 @@ def J(P):
 
  
 if __name__ == '__main__':
-    n = 50
+    n = 5
     pts = [[random.random(), random.random()] for i in range(n)]
     print(pts)
     pts = pts + [[100, 100], [100, -100], [-100, 0]]
