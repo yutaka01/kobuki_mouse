@@ -139,9 +139,9 @@ if __name__ == '__main__':
     # tps://docs.scipy.org/doc/scipy/reference/generated/scipy.misc.imread.html
 
     # We want (approximately) 500 pixels per voronoi region
-    zoom = (args.n_point * 500) / (density.shape[0] * density.shape[1])
-    zoom = int(round(np.sqrt(zoom)))
-    density = scipy.ndimage.zoom(density, zoom, order=0)
+    #zoom = (args.n_point * 500) / (density.shape[0] * density.shape[1])
+    #zoom = int(round(np.sqrt(zoom)))
+    #density = scipy.ndimage.zoom(density, zoom, order=0)
     # https://docs.scipy.org/doc/scipy/reference/generated/scipy.ndimage.zoom.html
 
     # Apply threshold onto image
@@ -152,7 +152,6 @@ if __name__ == '__main__':
     density = density[::-1, :]
     density_P = density.cumsum(axis=1)  # 累積和
     density_Q = density_P.cumsum(axis=1)  # 累積和
-    print(density)
     dirname = os.path.dirname(filename)
     basename = (os.path.basename(filename).split('.'))[0]
     pdf_filename = os.path.join(dirname, basename + "-stipple.pdf")

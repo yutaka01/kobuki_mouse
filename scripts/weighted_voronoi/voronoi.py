@@ -236,8 +236,7 @@ def centroids(points, density, density_P=None, density_Q=None):
     centroids.
     一組の点と密度配列が与えられたら、一組の加重重心を返します。
     """
-    print(type(points))
-    print(points[:, 0])
+
     X, Y = points[:, 0], points[:, 1]
     # You must ensure:
     #   0 < X.min() < X.max() < density.shape[0]
