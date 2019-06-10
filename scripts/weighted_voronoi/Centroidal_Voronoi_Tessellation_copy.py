@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 from scipy.spatial import Voronoi, voronoi_plot_2d
 from shapely.geometry import Polygon, Point
 
+
 def rasterize(V):
     """
     Polygon rasterization (scanlines).
@@ -62,7 +63,8 @@ def centroidal(vor, pts):
     for i in range(len(pts)-3):
         poly = [vor.vertices[v] for v in vor.regions[vor.point_region[i]]]
         i_cell = sq.intersection(Polygon(poly)) #sq&Polygon(poly)と等価
-         output = i_cell(x, y)
+        print(list(i_cell.exterior.coords))
+        rao = np.array(i_cell)
         rasta = rasterize(i_cell)
         p = Point(pts[i])
         pts[i] = i_cell.centroid.coords[0]

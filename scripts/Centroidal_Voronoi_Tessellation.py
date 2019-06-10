@@ -100,8 +100,12 @@ def phi(Q, P):
     return np.min(((np.dot((Q - P).T,  (Q - P)))**2))
 
 def J(P):
-    alpha = dblquad(lambda x, y: phi([x, y], P), 0, 100, 0, 100)
+    alpha = dblquad(lambda x, y: phi([x, y], P), 0, 1, 0, 1)
     return alpha[0]
+
+def H(x, y):
+    return np.exp(((0.5*(x - 80))**2 + (0.5*(y - 80))**2)/(-200))
+
 
 def normalize(D):
     Vmin, Vmax = D.min(), D.max()
@@ -112,20 +116,35 @@ def normalize(D):
     return D
  
 if __name__ == '__main__':
-    n = 50
+    n = 10
     pts = [[random.randint(1,99), random.randint(1,99)] for i in range(n)]
     print(pts)
-    pts = pts + [[10000, 10000], [10000, -10000], [-10000, 0]]
+    pts = pts + [[100000, 100000], [1000000, -100000], [-100000, 0]]
 
     plt.figure(figsize=(6, 6))
     d_threshold = 0.0001
     num = 0
     hyo = []
-    D = scipy.misc.imread('mudai.png', flatten=True, mode='L')
+    """
+    gauss = np.zeros((100,100))
+    L = H(80, 80)
+    for i in range(100):
+        for j in range(100):
+            gauss[i][j].append(H(i, j))
+    """
+    D = scipy.misc.imread('Down2_2.png', flatten=True, mode='L')
     D = 1.0 - normalize(D)
     D = D[::-1, :]
     D = D + 0.00000001
-    for i in range(100):
+    plt.cla()
+    vor = Voronoi(pts)
+    voronoi_plot_2d(vor, ax=plt.gca(), show_vertices=False)
+
+    plt.gca().set_aspect('equal')
+    plt.gca().set_xlim([0, 100])
+    plt.gca().set_ylim([0, 100])
+    plt.show()
+    for i in range(200):
         num += 1
         vor = Voronoi(pts)
         print(num)
@@ -148,18 +167,17 @@ if __name__ == '__main__':
         print(hyo)
         p = pts[:50]
         p = np.array(p)
+        p = p/100
         hyo.append(J(p))
         print(hyo)
         """
-        #if num == 1:
-            #(J(p))
+        if num == 1 or num == 2 or num == 5 or num == 10 or num == 50 or num == 100 or num == 150:
+            plt.savefig(str(i).zfill(2) + 'alpha2.png', bbox_inches='tight')
         #if d < d_threshold:
             #print(J(p))
             #break
     #print(J(p))
 
     plt.show()
-    x = list(range(num))
-    plt.plot(x, hyo)
-    plt.show()
-
+    #x = list(range(num))
+    #plt.plot(x, hyo)
